@@ -25,7 +25,7 @@ import pageObjectModels.myInfoPageObjects;
 public class myInfoTestCases extends baseClass {
 	@Test
 	public void fillPersonalDetails() throws IOException, InterruptedException, AWTException {
-
+ //change  new code in admin 
 		driver.manage().window().maximize();
 		Thread.sleep(2000);
 
@@ -49,18 +49,18 @@ public class myInfoTestCases extends baseClass {
 		 * mpo.OtherId().sendKeys("0012");
 		 */
 
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		mpo.clickOnNationalityDropdwon().click();
 
 		Thread.sleep(3000);
-		commonMethods.handleDropdown(mpo.chooseNationality(),"India");
+		commonMethods.handleDropdown(mpo.chooseNationality(), "India");
 		Thread.sleep(3000);
-		commonMethods.handleDropdown(mpo.genderOptions(),"female");
+		commonMethods.handleDropdown(mpo.genderOptions(), "female");
 		Thread.sleep(3000);
-		commonMethods.handleDropdown(mpo.selectMaritalStatus(),"Married");
+		commonMethods.handleDropdown(mpo.selectMaritalStatus(), "Married");
 		Thread.sleep(3000);
-		commonMethods.handleDropdown(mpo.bloodType(),"B+");
-		
+		commonMethods.handleDropdown(mpo.bloodType(), "B+");
+
 		Thread.sleep(2000);
 		mpo.addAttachments().click();
 		Thread.sleep(6000);

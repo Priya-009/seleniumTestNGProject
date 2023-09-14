@@ -18,9 +18,8 @@ public class myInfoPageObjects {
 	private By EmployeeId = By.xpath("(//input[@class='oxd-input oxd-input--focus'])[1]");
 	private By OtherId = By.xpath("(//input[@class='oxd-input oxd-input--active'])[3]");
 	private By DriversLicenseNumber = By.xpath("(//input[@class='oxd-input oxd-input--active'])[5]");
-	// private By LicenseExpiryDate=
-	// By.xpath("(//input[@fdprocessedid='taeuxm'])[1]");
-
+    private By LicenseExpiryDate= By.xpath("(//input[@placeholder='yyyy-mm-dd'])[1]");
+	 
 	private By SSNNumber = By.xpath("(//input[@class='oxd-input oxd-input--active'])[7]");
 	private By SINNumber = By.xpath("(//input[@class='oxd-input oxd-input--active'])[8]");
 	// private By dateofbirth=By.xpath("(//i[@class='oxd-icon bi-calendar
@@ -88,11 +87,12 @@ public class myInfoPageObjects {
 		return driver.findElement(DriversLicenseNumber);
 	}
 
-	/*
-	 * public WebElement LicenseExpiryDate () {
-	 * 
-	 * return driver.findElement(LicenseExpiryDate); }
-	 */
+	
+	  public WebElement LicenseExpiryDate () {
+	  
+	  return driver.findElement(LicenseExpiryDate); 
+	  }
+	 
 	public WebElement SSNNumber() {
 
 		return driver.findElement(SSNNumber);
