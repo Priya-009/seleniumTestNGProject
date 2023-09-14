@@ -13,7 +13,7 @@ import Resources.commonMethods;
 import pageObjectModels.loginPageObjects;
 
 public class loginTestCases extends baseClass {
-
+//added one new line for git  demo purpose
  @Test(priority = 0)
  public void verifyValidLogin() throws IOException, InterruptedException {
 
